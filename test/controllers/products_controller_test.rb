@@ -53,3 +53,11 @@ class ProductsControllerTest < ActionController::TestCase
     assert_redirected_to products_path
   end
 end
+
+
+class StoreControllerTest < ActionController::TestCase
+  test "should get index" do
+    get :index
+    assert_response :success
+  end
+end
